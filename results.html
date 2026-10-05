@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Student Results</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <h2>🎓 GuruNanak University - Results</h2>
+
+            <a href="admin.html">
+                <button>Admin Dashboard</button>
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <section>
+
+        <h1>📊 Manage Student Results</h1>
+
+
+        <!-- Add Result -->
+
+        <div class="student-form">
+
+            <h2>Add Result</h2>
+
+            <form onsubmit="addResult(event)">
+
+                <input
+                    type="text"
+                    id="resultStudentId"
+                    placeholder="Student ID"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="marks"
+                    placeholder="Marks (0-100)"
+                    min="0"
+                    max="100"
+                    required
+                >
+
+                <button type="submit">
+                    Add Result
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- Results Table -->
+
+        <div class="table-container">
+
+            <h2>Results List</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="resultsTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

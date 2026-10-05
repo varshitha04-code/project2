@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Students</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <h2>🎓 GuruNanak University - Students</h2>
+
+            <a href="admin.html">
+                <button>Admin Dashboard</button>
+            </a>
+        </nav>
+
+    </header>
+
+
+    <section>
+
+        <h1>Student Management</h1>
+
+        <!-- Add Student Form -->
+
+        <div class="student-form">
+
+            <h2>Add Student</h2>
+
+            <form onsubmit="addStudent(event)">
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Student Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="studentId"
+                    placeholder="Student ID"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="studentEmail"
+                    placeholder="Student Email"
+                    required
+                >
+
+                <select id="studentCourse" required>
+
+                    <option value="">
+                        Select Course
+                    </option>
+
+                    <option value="CSE">CSE</option>
+
+                    <option value="AIML">AIML</option>
+
+                    <option value="ECE">ECE</option>
+
+                    <option value="BBA">BBA</option>
+
+                </select>
+
+                <button type="submit">
+                    Add Student
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- Student Table -->
+
+        <div class="table-container">
+
+            <h2>Student List</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="studentTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

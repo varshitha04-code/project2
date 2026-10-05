@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - GuruNanak University</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<a href="students.html">Manage Students</a>
+<a href="results.html">Manage Results</a>
+<a href="attendance.html">Manage Attendance</a>
+<a href="notices.html">Manage Notices</a>
+    <header>
+
+        <nav>
+
+            <h2>🎓 GuruNanak University - Admin</h2>
+
+            <button onclick="adminLogout()">
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <section class="dashboard">
+
+        <h1>Admin Dashboard</h1>
+
+        <p>Manage college information from here.</p>
+
+
+        <div class="dashboard-container">
+
+            <!-- Students -->
+
+            <div class="dashboard-card">
+
+                <h3>👨‍🎓 Students</h3>
+
+                <p>Total Students: 500</p>
+
+                <a href="students.html">
+    <button>
+        Manage Students
+    </button>
+</a>
+
+            </div>
+
+
+            <!-- Courses -->
+
+            <div class="dashboard-card">
+
+                <h3>📚 Courses</h3>
+
+                <p>Total Courses: 4</p>
+
+                <a href="results.html">
+    <button>
+        Manage Results
+    </button>
+</a>
+
+            </div>
+
+
+            <!-- Notices -->
+
+            <div class="dashboard-card">
+
+                <h3>📢 Notices</h3>
+
+                <p>Create and manage college notices.</p>
+
+                <button onclick="showAdminMessage('Notices')">
+                    Manage Notices
+                </button>
+
+            </div>
+
+
+            <!-- Results -->
+
+            <div class="dashboard-card">
+
+                <h3>📊 Results</h3>
+
+                <p>Manage student examination results.</p>
+
+                <button onclick="showAdminMessage('Results')">
+                    Manage Results
+                </button>
+
+            </div>
+
+
+            <!-- Attendance -->
+
+            <div class="dashboard-card">
+
+                <h3>📅 Attendance</h3>
+
+                <p>Manage student attendance.</p>
+
+                <button onclick="showAdminMessage('Attendance')">
+                    Manage Attendance
+                </button>
+
+            </div>
+
+
+            <!-- Events -->
+
+            <div class="dashboard-card">
+
+                <h3>🎉 Events</h3>
+
+                <p>Manage upcoming college events.</p>
+
+                <button onclick="showAdminMessage('Events')">
+                    Manage Events
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GuruNanak University</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>🎓 GuruNanak University</h2>
+<a href="index.html">Home</a>
+<a href="login.html">Student Login</a>
+<a href="admin-login.html">Admin Login</a>
+<a href="notices.html">Notices</a>
+
+            <ul>
+                <li>
+    <a href="login.html">Student Login</a>
+</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#notices">Notices</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <h1>Welcome to GuruNanak University</h1>
+
+            <p>
+                Empowering students with knowledge, skills and confidence
+                for a brighter future.
+            </p>
+
+            <a href="#courses" class="btn">Explore Courses</a>
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Our College</h2>
+
+        <p class="about-text">
+            GuruNanak University is committed to providing quality education and
+            creating opportunities for students to develop their academic,
+            technical and professional skills.
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>📚 Quality Education</h3>
+                <p>Experienced faculty and modern teaching methods.</p>
+            </div>
+
+            <div class="feature">
+                <h3>💻 Modern Labs</h3>
+                <p>Well-equipped laboratories for practical learning.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🏆 Student Activities</h3>
+                <p>Sports, cultural activities and technical events.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Courses -->
+    <section id="courses" class="light-section">
+
+        <h2>Our Courses</h2>
+
+        <div class="course-container">
+
+            <div class="course">
+                <h3>CSE</h3>
+                <p>Computer Science Engineering</p>
+                <button onclick="courseMessage('CSE')">
+                    View Course
+                </button>
+            </div>
+
+            <div class="course">
+                <h3>AIML</h3>
+                <p>Artificial Intelligence & Machine Learning</p>
+                <button onclick="courseMessage('AIML')">
+                    View Course
+                </button>
+            </div>
+
+            <div class="course">
+                <h3>ECE</h3>
+                <p>Electronics & Communication Engineering</p>
+                <button onclick="courseMessage('ECE')">
+                    View Course
+                </button>
+            </div>
+
+            <div class="course">
+                <h3>BBA</h3>
+                <p>Bachelor of Business Administration</p>
+                <button onclick="courseMessage('BBA')">
+                    View Course
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Notices -->
+    <section id="notices">
+
+        <h2>📢 Latest Notices</h2>
+
+        <div class="notice-container">
+
+            <div class="notice">
+                <h3>Admissions Open</h3>
+                <p>Applications are now open for the new academic year.</p>
+            </div>
+
+            <div class="notice">
+                <h3>Internal Examinations</h3>
+                <p>Internal examinations will begin next month.</p>
+            </div>
+
+            <div class="notice">
+                <h3>Annual Fest</h3>
+                <p>Our annual cultural fest will be held soon.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Registration -->
+    <section id="register" class="light-section">
+
+        <h2>Student Registration</h2>
+
+        <form onsubmit="registerStudent(event)">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+            <select id="course" required>
+
+                <option value="">Select Course</option>
+                <option value="CSE">CSE</option>
+                <option value="AIML">AIML</option>
+                <option value="ECE">ECE</option>
+                <option value="BBA">BBA</option>
+
+            </select>
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📧 Email: gnuindia@gmail.com</p>
+        <p>📞 Phone: 9876543210</p>
+        <p>📍Ibrahimpatnam, Hyderabad, Telangana</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 GuruNanak University | All Rights Reserved</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

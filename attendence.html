@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance Management</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <h2>🎓 GuruNanak University - Attendance</h2>
+
+        <a href="admin.html">
+            <button>Admin Dashboard</button>
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section>
+
+    <h1>📅 Attendance Management</h1>
+
+
+    <div class="student-form">
+
+        <h2>Add Attendance</h2>
+
+        <form onsubmit="addAttendance(event)">
+
+            <input
+                type="text"
+                id="attendanceStudentId"
+                placeholder="Student ID"
+                required
+            >
+
+            <input
+                type="text"
+                id="attendanceSubject"
+                placeholder="Subject"
+                required
+            >
+
+            <input
+                type="number"
+                id="totalClasses"
+                placeholder="Total Classes"
+                min="1"
+                required
+            >
+
+            <input
+                type="number"
+                id="attendedClasses"
+                placeholder="Classes Attended"
+                min="0"
+                required
+            >
+
+            <button type="submit">
+                Add Attendance
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div class="table-container">
+
+        <h2>Attendance Records</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Student ID</th>
+
+                    <th>Subject</th>
+
+                    <th>Total Classes</th>
+
+                    <th>Attended</th>
+
+                    <th>Percentage</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="attendanceTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

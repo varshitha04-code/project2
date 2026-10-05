@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+/* Navigation */
+
+header {
+    background-color: #123c69;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7%;
+}
+
+nav h2 {
+    color: white;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 550px;
+
+    background-image:
+        linear-gradient(
+            rgba(18, 60, 105, 0.75),
+            rgba(18, 60, 105, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1564981797816-1043664bf78d");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+
+    background-color: #ffd166;
+    color: #123c69;
+
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/* Sections */
+
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 35px;
+    color: #123c69;
+    margin-bottom: 30px;
+}
+
+.light-section {
+    background-color: #f4f6f8;
+}
+
+
+/* About */
+
+.about-text {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.feature {
+    width: 280px;
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+/* Courses */
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.course {
+    width: 230px;
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.course:hover {
+    transform: translateY(-8px);
+}
+
+.course h3 {
+    color: #4f86c6;
+    font-size: 25px;
+}
+
+button {
+    border: none;
+    padding: 11px 20px;
+
+    background-color: #123c69;
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4f86c6;
+}
+
+
+/* Notices */
+
+.notice-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.notice {
+    background-color: #fff4d6;
+
+    padding: 20px;
+
+    margin: 15px 0;
+
+    border-left: 5px solid #ffd166;
+
+    text-align: left;
+}
+
+.notice h3 {
+    margin-top: 0;
+    color: #123c69;
+}
+
+
+/* Registration Form */
+
+form {
+    max-width: 500px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+input,
+select {
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+form button {
+    padding: 14px;
+    font-size: 16px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #123c69;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 90%;
+    }
+}
+/* Login Page */
+
+.login-container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f4f6f8;
+}
+
+.login-box {
+    width: 350px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.login-box h1 {
+    color: #123c69;
+}
+
+.login-box h2 {
+    color: #4f86c6;
+}
+
+.login-box form {
+    margin-top: 25px;
+}
+
+.login-box a {
+    display: block;
+
+    margin-top: 20px;
+
+    color: #123c69;
+
+    text-decoration: none;
+}
+
+
+/* Dashboard */
+
+.dashboard {
+    background-color: #f4f6f8;
+
+    min-height: 90vh;
+}
+
+.dashboard h1 {
+    color: #123c69;
+}
+
+.dashboard-container {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.dashboard-card {
+    width: 280px;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    text-align: left;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.dashboard-card h3 {
+    color: #123c69;
+}
+/* Student Management */
+
+.student-form {
+    max-width: 500px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.1);
+}
+
+.student-form form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* Student Table */
+
+.table-container {
+    margin-top: 50px;
+
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+th,
+td {
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+}
+
+th {
+    background-color: #123c69;
+
+    color: white;
+}
+
+td button {
+    background-color: #d9534f;
+}
+
+td button:hover {
+    background-color: #c9302c;
+}
